@@ -1,0 +1,99 @@
+<!-- NAME OF AUTHOR : Basavraj Jaliminche
+     Student Id : 8800149
+     Assignment no 2
+     Web Design and Development-->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Conestoga Garage Sale</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script type="text/javascript" src="js/form.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/form.css">
+</head>
+
+<body>
+  <h1><u>Winter Garage Sale 2022</u></h1>
+  
+  <form name="myform" method="Post" onsubmit="return formSubmit(event);" action="">
+    <aside id="con_left">
+      <h2><u>Donor's Info</u></h2>
+    <label>Name</label>
+    <input id="flname" placeholder="First Last" type="text" name="flname"><br />
+
+    <label>Email</label>
+    <input id="email" placeholder="email@domain.com" type="email" name="email"><br />
+
+    <label>Credit Card Number</label>
+    <input id="creditcard" placeholder="xxxx-xxxx-xxxx-xxxx" type="text" name="creditcard"><br />
+
+    <label>Credit Card Expiry Month</label>
+    <input id="expmonth" placeholder="MMM" type="text" name="expmonth"><br />
+
+    <label>Credit Card Expiry Year</label>
+    <input id="expyear" placeholder="yyyy" type="text" name="expyear"><br />
+
+    
+  </aside>
+    <aside id="con_right">
+      <h2><u>Product's for sale</u></h2>
+      <label>Jackets ($25)</label>
+      <input id="Jackets" placeholder="0" type="text" name="Jackets"><br />
+      <label>Sweaters ($15)</label>
+      <input id="Sweaters" placeholder="0" type="text" name="Sweaters"><br />
+      <label>Pair of Gloves ($7)</label>
+      <input id="Gloves" placeholder="0" type="text" name="Gloves"><br />
+      <label>Caps ($5)</label>
+      <input id="Caps" placeholder="0" type="text" name="Caps"><br />
+      <label>Scarfs ($3)</label>
+      <input id="Scarfs" placeholder="0" type="text" name="Scarfs"><br />
+
+      <br /><br />
+    </aside>
+
+    <input type="submit" value="Submit">
+    <p id="errors"></p>
+  </form>
+
+  <div class="formData">
+    <h3>Thank you for your order!</h3>
+    <table>
+      <tr>
+        <th>Name</th>
+        <td id="nameValue" style="text-transform: capitalize;"></td>
+      </tr>
+      <tr>
+        <th>Email</th>
+        <td id="emailValue"></td>
+      </tr>
+      <tr>
+        <th>Credit Card</th>
+        <td id="creditCardValue"></td>
+      </tr>
+    </table>
+    <table id="receipt">
+      <tr>
+        <th>Item</th>
+        <th>Quantity</th>
+        <th>Unit Price</th>
+        <th>Total Price</th>
+      </tr>
+      <tr>
+        <td>Donation</td>
+        <td colspan="2">Minimum</td>
+        <td id="donationValue"></td>
+      </tr>
+      <tr>
+        <th colspan="3">Total</th>
+        <th id="totalCost"></th>
+      </tr>
+    </table>
+  </div>
+</body>
+
+<footer> Created By Basavraj Jaliminche (8800149),All rights are reserved  Conestoga College </footer>
+
+</html>

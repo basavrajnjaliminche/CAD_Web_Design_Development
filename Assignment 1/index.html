@@ -1,0 +1,89 @@
+<!-- Author:-
+     Basavraj Jaliminche 
+     Student Id:- 8800149
+     Course Name: Web Design and Development
+     Assignment no 1 
+     Waterloo Flower Shop 
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Waterloo Flower shop</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="flower.js"></script>
+   
+</head>
+
+<body>
+    
+    <h1 class="head">Waterloo Flower shop</h1>
+    <div class="container">
+        <div class="orderSection">
+            <h1>
+                Flower's list
+            </h1>
+            <h1>
+                Flower's list
+            </h1>
+            <hr style="border-top: 4px solid black;width: 100%;">
+
+             GERBERA DAISY (2$/Pc)
+            <div class="Gerbary"> <img src="images/Gerbary.webp" alt="Gerbary" width="40%" height="100px">
+                <button class="Gerbary_btn" onclick="addToBasket('GERBERA', 2)">Add to Basket</button>
+            </div><br>
+
+            LILIES (3$/Pc)
+            <div class="Lillies"> <img src="images/Lillies.webp" alt="Lillies" width="40%" height="100px"> 
+                <button  class="Lillies_btn" onclick="addToBasket('LILIES', 3)">Add to Basket</button>
+            </div><br>
+
+            TULIPS (4$/Pc)
+        
+            <div class="Tulips"> <img src="images/Tulips.webp" alt="Tulips" width="40%" height="100px"> 
+               <button class="Tulips_btn"  onclick="addToBasket('TULIPS',4)">Add to Basket</button>
+            </div><br>
+
+            IRIS (5$/Pc)
+            <div class="IRIS"><img src="images/Iris.webp" alt="IRIS" width="40%" height="100px">  <button   class="Iris_btn" onclick="addToBasket('IRIS',5)">Add to Basket</button>
+            </div><br>
+
+            Roses (6$/Pc)
+            <div class="Roses"> <img src="images/Roses.webp" alt="Roses" width="40%" height="100px"> 
+               <button class="Roses_btn"  onclick="addToBasket('Roses',6)">Add to Basket</button>
+            </div><br><br><br>
+            
+        </div>
+
+        <div class="checkoutSection">
+            <h1>Receipt For Custamer</h1>
+            <hr style="border-top: 4px solid black;width: 100%;">
+            <table id="FlowersReceipt">
+                <thead>
+                    <th>Product</th>
+                    <th id="itemQuantity">Item Quantity</th>
+                    <th>Price</th>
+                </thead>
+                <tr>
+                    <td></td>
+                </tr>
+            </table>
+            <button id="checkoutButton" onclick="order_summary()" disabled="true">Checkout</button>
+            <div id="finalInvoice">
+                <p id="totalPrice"></p>
+                <p id="taxAmount"></p>
+                <p id="totalAmount"></p>
+            </div>
+            <h1 id="userReceipt"></h1>
+
+        </div>
+    </div>
+<footer class="foot">
+    All rights reserved For BasavraJ Jaliminche
+</footer>
+</body>
+
+</html>
